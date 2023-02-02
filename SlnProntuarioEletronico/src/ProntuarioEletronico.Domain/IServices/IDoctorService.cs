@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProntuarioEletronico.Domain.IServices
 {
-    public interface IPatientService : IBaseService<PatientDTO>
+    public interface IDoctorService : IBaseService<DoctorDTO>
     {
         Task<int> SaveFile(int id, string file);
     }
