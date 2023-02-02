@@ -12,8 +12,8 @@ using ProntuarioEletronico.Infra.Data.Context;
 namespace ProntuarioEletronico.Infra.Data.Migrations
 {
     [DbContext(typeof(SQLServerContext))]
-    [Migration("20230202030745_Inicial")]
-    partial class Inicial
+    [Migration("20230202160810_InicialTable")]
+    partial class InicialTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,12 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     b.Property<int>("CRM")
                         .HasColumnType("int");
 
+                    b.Property<DateTime?>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -55,9 +61,10 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("MaritalStatus")
+                    b.Property<int>("MaritalStatus")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -70,7 +77,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     b.Property<int>("RG")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Sex")
+                    b.Property<int>("Sex")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -139,8 +146,13 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Complement")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Diagnosis")
                         .IsRequired()
@@ -154,9 +166,10 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("MaritalStatus")
+                    b.Property<int>("MaritalStatus")
                         .HasColumnType("int");
 
                     b.Property<int>("MedicalPlanId")
@@ -179,7 +192,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     b.Property<int>("RG")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Sex")
+                    b.Property<int>("Sex")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

@@ -1,12 +1,12 @@
-D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.deps.json
-D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.runtimeconfig.json
-D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.dll
-D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.pdb
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.csproj.AssemblyReference.cache
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.GeneratedMSBuildEditorConfig.editorconfig
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.AssemblyInfoInputs.cache
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.AssemblyInfo.cs
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.csproj.CoreCompileInputs.cache
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.deps.json
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.runtimeconfig.json
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.dll
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\bin\Debug\net6.0\ProntuarioEletronico.Domain.pdb
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.dll
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\refint\ProntuarioEletronico.Domain.dll
 D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Domain\obj\Debug\net6.0\ProntuarioEletronico.Domain.pdb

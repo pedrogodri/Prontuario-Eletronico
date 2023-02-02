@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProntuarioEletronico.Infra.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class InicialTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -26,11 +26,13 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     Age = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<int>(type: "int", nullable: false),
-                    Sex = table.Column<int>(type: "int", nullable: true),
-                    MaritalStatus = table.Column<int>(type: "int", nullable: true),
+                    Sex = table.Column<int>(type: "int", nullable: false),
+                    MaritalStatus = table.Column<int>(type: "int", nullable: false),
                     CPF = table.Column<int>(type: "int", nullable: false),
                     RG = table.Column<int>(type: "int", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -63,16 +65,18 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     CEP = table.Column<int>(type: "int", nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Number = table.Column<int>(type: "int", nullable: false),
-                    Complement = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Complement = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Age = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Phone = table.Column<int>(type: "int", nullable: false),
-                    Sex = table.Column<int>(type: "int", nullable: true),
-                    MaritalStatus = table.Column<int>(type: "int", nullable: true),
+                    Sex = table.Column<int>(type: "int", nullable: false),
+                    MaritalStatus = table.Column<int>(type: "int", nullable: false),
                     CPF = table.Column<int>(type: "int", nullable: false),
                     RG = table.Column<int>(type: "int", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
