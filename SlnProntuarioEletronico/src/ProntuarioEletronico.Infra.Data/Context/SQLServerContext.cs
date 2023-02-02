@@ -13,6 +13,7 @@ namespace ProntuarioEletronico.Infra.Data.Context
     {
         public SQLServerContext(DbContextOptions<SQLServerContext> options) 
             : base(options) { }
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MedicalPlan>()
