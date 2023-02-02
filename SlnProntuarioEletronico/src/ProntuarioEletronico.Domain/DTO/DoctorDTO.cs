@@ -31,7 +31,9 @@ namespace ProntuarioEletronico.Domain.DTO
                 MaritalStatus = maritalStatus,
                 CPF = cpf,
                 RG = rg,
-                Image = image
+                Image = image,
+                DataAtualizacao= dataAtualizacao,
+                DataCadastro= dataCadastro,
             };
         }
 
@@ -39,7 +41,21 @@ namespace ProntuarioEletronico.Domain.DTO
         {
             return new DoctorDTO()
             {
-
+                id = doctor.Id,
+                crm = doctor.CRM,
+                especialidade = doctor.Especialidade,
+                description = doctor.Description,
+                name = doctor.Name,
+                age = doctor.Age,
+                email = doctor.Email,
+                phone = doctor.Phone,
+                sex = doctor.Sex,
+                maritalStatus = doctor.MaritalStatus,
+                cpf = doctor.CPF,
+                rg = doctor.RG,
+                image = doctor.Image,
+                dataAtualizacao = doctor.DataAtualizacao,
+                dataCadastro = doctor.DataCadastro
             };
         }
     }
