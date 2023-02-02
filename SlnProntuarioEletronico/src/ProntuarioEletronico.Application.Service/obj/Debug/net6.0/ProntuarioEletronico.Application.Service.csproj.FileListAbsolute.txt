@@ -1,0 +1,17 @@
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\bin\Debug\net6.0\ProntuarioEletronico.Application.Service.deps.json
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\bin\Debug\net6.0\ProntuarioEletronico.Application.Service.runtimeconfig.json
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\bin\Debug\net6.0\ProntuarioEletronico.Application.Service.dll
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\bin\Debug\net6.0\ProntuarioEletronico.Application.Service.pdb
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\bin\Debug\net6.0\ProntuarioEletronico.Domain.dll
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\bin\Debug\net6.0\ProntuarioEletronico.Domain.pdb
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.csproj.AssemblyReference.cache
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.AssemblyInfoInputs.cache
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.AssemblyInfo.cs
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.csproj.CoreCompileInputs.cache
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.csproj.CopyComplete
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.dll
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\refint\ProntuarioEletronico.Application.Service.dll
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.pdb
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ProntuarioEletronico.Application.Service.genruntimeconfig.cache
+D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Application.Service\obj\Debug\net6.0\ref\ProntuarioEletronico.Application.Service.dll
