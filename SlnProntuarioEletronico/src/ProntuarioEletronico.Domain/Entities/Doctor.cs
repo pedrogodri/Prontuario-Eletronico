@@ -12,5 +12,6 @@ namespace ProntuarioEletronico.Domain.Entities
         public int CRM { get; set; }
         public string Especialidade { get; set; }
         public string Description { get; set; }
+        public virtual ICollection<Patient>? PatientsList { get; set; }
     }
 }
