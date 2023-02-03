@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using ProntuarioEletronico.Application.Service.SQLServerServices;
+using ProntuarioEletronico.Domain.IRepositories;
+using ProntuarioEletronico.Domain.IServices;
 using ProntuarioEletronico.Infra.Data.Context;
+using ProntuarioEletronico.Infra.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,18 @@ builder.Services.AddControllersWithViews();
 var connectionStringUser = builder.Configuration.GetConnectionString("SQLServerConnection");
 builder.Services.AddDbContext<SQLServerContext>
     (options => options.UseSqlServer(connectionStringUser));
+
+// ## Dependency Injection
+
+// Repositories
+builder.Services.AddScoped<IMedicalPlanRepository, MedicalPlanRepository>();
+builder.Services.AddScoped<IDoctorRepository, DoctorRepository>();
+builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+
+// Services
+builder.Services.AddScoped<IMedicalPlanService, MedicalPlanService>();
+builder.Services.AddScoped<IDoctorService, DoctorService>();
+builder.Services.AddScoped<IPatientService, PatientService>();
 
 var app = builder.Build();
 

@@ -33,7 +33,7 @@ namespace ProntuarioEletronico.Domain.DTO
                 RG = rg,
                 Image = image,
                 DataAtualizacao= dataAtualizacao,
-                DataCadastro= dataCadastro,
+                DataCadastro = dataCadastro,
             };
         }
 

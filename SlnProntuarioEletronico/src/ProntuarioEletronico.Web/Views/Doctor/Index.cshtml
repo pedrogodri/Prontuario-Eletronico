@@ -1,0 +1,111 @@
+﻿@model IEnumerable<ProntuarioEletronico.Domain.DTO.DoctorDTO>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create">New Category</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.sex)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.maritalStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.rg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dataAtualizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dataCadastro)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.crm)
+            <th>
+                @Html.DisplayNameFor(model => model.especialidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.id)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.age)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.phone)
+                    </td>
+                    <td>
+                    @Html.DisplayFor(modelItem => item.sex)
+                     </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.maritalStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cpf)
+                </td>
+                <td>
+                        @Html.DisplayFor(modelItem => item.rg)
+                    </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dataAtualizacao)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dataCadastro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.crm)
+                    </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.especialidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.image)
+                </td>
+                    <td>
+                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
+                        <a class="btn btn-danger" href="#" onclick="deleteCategory(@item.id)">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>

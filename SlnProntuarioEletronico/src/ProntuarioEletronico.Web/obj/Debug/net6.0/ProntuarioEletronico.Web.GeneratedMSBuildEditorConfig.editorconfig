@@ -16,12 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Doctor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/MedicalPlan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNhbFBsYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Patient/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Shared/Error.cshtml]
