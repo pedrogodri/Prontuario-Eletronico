@@ -17,5 +17,10 @@ namespace ProntuarioEletronico.Web.Controllers
         {
             return View(_service.FindAll());
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }
