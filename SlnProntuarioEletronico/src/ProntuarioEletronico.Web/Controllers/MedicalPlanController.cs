@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProntuarioEletronico.Domain.DTO;
 using ProntuarioEletronico.Domain.IServices;
+using ProntuarioEletronico.Web.Models;
 
 namespace ProntuarioEletronico.Web.Controllers
 {
@@ -51,6 +52,37 @@ namespace ProntuarioEletronico.Web.Controllers
                 if(await _service.Save(medicalPlan) > 0) return RedirectToAction(nameof(Index));
             }
             return View(medicalPlan);
+        }
+
+        [HttpPost]
+        public async Task<JsonResult> Delete(int? id)
+        {
+            var retDel = new ReturnJsonDel()
+            {
+                status = "Success",
+                code = "200"
+            };
+
+            try
+            {
+                if(await _service.Delete(id ?? 0) <= 0)
+                {
+                    retDel = new ReturnJsonDel()
+                    {
+                        status = "Error",
+                        code = "400"
+                    };
+                }
+            }
+            catch (Exception ex)
+            {
+                retDel = new ReturnJsonDel()
+                {
+                    status = ex.Message,
+                    code = "500"
+                };
+            }
+            return Json(retDel);
         }
     }
 }

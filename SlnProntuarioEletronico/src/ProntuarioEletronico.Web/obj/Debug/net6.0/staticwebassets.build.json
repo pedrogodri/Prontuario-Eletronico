@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L4zofb7aIZg0wzoDWgPs/EmugFbD1ZMTTps5QGq7Lng=",
+  "Hash": "XJ3gBCQDPIqmqc2AovM0dhQO87xNMM/uL2TVL5++368=",
   "Source": "ProntuarioEletronico.Web",
   "BasePath": "_content/ProntuarioEletronico.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\js\\modalToast.js",
+      "SourceId": "ProntuarioEletronico.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\",
+      "BasePath": "_content/ProntuarioEletronico.Web",
+      "RelativePath": "js/modalToast.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\modalToast.js"
     },
     {
       "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\js\\site.js",
