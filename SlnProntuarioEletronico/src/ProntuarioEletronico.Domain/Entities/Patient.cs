@@ -10,11 +10,9 @@ namespace ProntuarioEletronico.Domain.Entities
     public class Patient : Person
     {
         public int Id { get; set; }
-        public int MedicalPlanId { get; set; }
-        [Required(ErrorMessage = "Selecione o seu convênio")]
+        public int? MedicalPlanId { get; set; }
         public virtual MedicalPlan? Plan { get; set; }
-        public int DoctorId { get; set; }
-        [Required(ErrorMessage = "Selecione o seu médico")]
+        public int? DoctorId { get; set; }
         public virtual Doctor? Doctor { get; set; }
         [Required(ErrorMessage = "Digite a sua profissão")]
         public string Profession { get; set; }

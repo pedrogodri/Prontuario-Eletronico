@@ -43,7 +43,7 @@ namespace ProntuarioEletronico.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int? id, [Bind("id, crm, especialidade, description, name, age, email, phone, sex, maritalStatus, cpf, rg, dataCadastro")] DoctorDTO doctor)
+        public async Task<IActionResult> Edit(int? id, [Bind("id, crm, especialidade, description, name, age, email, phone, sex, maritalStatus, cpf, rg, dataCadastro, dataAtualizacao")] DoctorDTO doctor)
         {
             if (id != doctor.id) return NotFound();
 

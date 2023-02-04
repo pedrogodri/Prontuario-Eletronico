@@ -157,7 +157,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DoctorId")
+                    b.Property<int?>("DoctorId")
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
@@ -170,7 +170,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     b.Property<int>("MaritalStatus")
                         .HasColumnType("int");
 
-                    b.Property<int>("MedicalPlanId")
+                    b.Property<int?>("MedicalPlanId")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
@@ -207,15 +207,11 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                 {
                     b.HasOne("ProntuarioEletronico.Domain.Entities.Doctor", "Doctor")
                         .WithMany("PatientsList")
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("DoctorId");
 
                     b.HasOne("ProntuarioEletronico.Domain.Entities.MedicalPlan", "Plan")
                         .WithMany("PatientsList")
-                        .HasForeignKey("MedicalPlanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MedicalPlanId");
 
                     b.Navigation("Doctor");
 

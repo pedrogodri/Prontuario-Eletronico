@@ -10,9 +10,9 @@ namespace ProntuarioEletronico.Domain.DTO
     public class PatientDTO : PersonDTO
     {
         public int id { get; set; }
-        public int medicalPlanId { get; set; }
+        public int? medicalPlanId { get; set; }
         public virtual MedicalPlan? plan { get; set; }
-        public int doctorId { get; set; }
+        public int? doctorId { get; set; }
         public virtual Doctor? doctor { get; set; }
         public string profession { get; set; }
         public string diagnosis { get; set; }
