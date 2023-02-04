@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\pedro\Documents\Prontuario-Eletronico\SlnProntuarioEletronico\src\ProntuarioEletronico.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Doctor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Doctor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/pedro/Documents/Prontuario-Eletronico/SlnProntuarioEletronico/src/ProntuarioEletronico.Web/Views/Doctor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

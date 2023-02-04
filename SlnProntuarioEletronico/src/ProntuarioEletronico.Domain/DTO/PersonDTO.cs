@@ -14,7 +14,7 @@ namespace ProntuarioEletronico.Domain.DTO
         public string email { get; set; }
         public int phone { get; set; }
         public SexEnum? sex { get; set; }
-        public MaritalStatus? maritalStatus { get; set; }
+        public MaritalStatusEnum? maritalStatus { get; set; }
         public int cpf { get; set; }
         public int rg { get; set; }
         public string? image { get; set; }

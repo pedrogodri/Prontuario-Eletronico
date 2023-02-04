@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProntuarioEletronico.Domain.Enums
 {
-    public enum MaritalStatus
+    public enum MaritalStatusEnum
     {
         Single = 1,
         Married = 2,

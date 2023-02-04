@@ -34,6 +34,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<int>("CPF")
+                        .HasMaxLength(11)
                         .HasColumnType("int");
 
                     b.Property<int>("CRM")
@@ -58,7 +59,6 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MaritalStatus")
@@ -72,6 +72,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("RG")
+                        .HasMaxLength(7)
                         .HasColumnType("int");
 
                     b.Property<int>("Sex")
@@ -140,6 +141,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<int>("CPF")
+                        .HasMaxLength(11)
                         .HasColumnType("int");
 
                     b.Property<string>("Complement")
@@ -163,7 +165,6 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MaritalStatus")
@@ -187,6 +188,7 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("RG")
+                        .HasMaxLength(7)
                         .HasColumnType("int");
 
                     b.Property<int>("Sex")

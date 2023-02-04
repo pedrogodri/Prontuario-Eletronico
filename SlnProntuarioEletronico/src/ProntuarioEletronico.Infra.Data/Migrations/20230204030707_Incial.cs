@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ProntuarioEletronico.Infra.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InicialTable : Migration
+    public partial class Incial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -28,9 +28,9 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     Phone = table.Column<int>(type: "int", nullable: false),
                     Sex = table.Column<int>(type: "int", nullable: false),
                     MaritalStatus = table.Column<int>(type: "int", nullable: false),
-                    CPF = table.Column<int>(type: "int", nullable: false),
-                    RG = table.Column<int>(type: "int", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CPF = table.Column<int>(type: "int", maxLength: 11, nullable: false),
+                    RG = table.Column<int>(type: "int", maxLength: 7, nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
@@ -72,9 +72,9 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     Phone = table.Column<int>(type: "int", nullable: false),
                     Sex = table.Column<int>(type: "int", nullable: false),
                     MaritalStatus = table.Column<int>(type: "int", nullable: false),
-                    CPF = table.Column<int>(type: "int", nullable: false),
-                    RG = table.Column<int>(type: "int", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CPF = table.Column<int>(type: "int", maxLength: 11, nullable: false),
+                    RG = table.Column<int>(type: "int", maxLength: 7, nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DataCadastro = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },

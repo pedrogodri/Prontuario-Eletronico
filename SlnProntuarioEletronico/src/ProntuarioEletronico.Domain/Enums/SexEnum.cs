@@ -10,6 +10,6 @@ namespace ProntuarioEletronico.Domain.Enums
     {
         Feminine = 1,
         Masculine = 2,
-        Nonbinary = 3
+        Others = 3
     }
 }

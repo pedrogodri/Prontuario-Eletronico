@@ -24,7 +24,7 @@ namespace ProntuarioEletronico.Domain.Entities
         [Required(ErrorMessage = "Selecione o seu sexo")]
         public SexEnum? Sex { get; set; }
         [Required(ErrorMessage = "Selecione o seu estado civil")]
-        public MaritalStatus? MaritalStatus { get; set; }
+        public MaritalStatusEnum? MaritalStatus { get; set; }
         [Required(ErrorMessage = "Digite o seu CPF")]
         [MinLength(11, ErrorMessage = "CPF são 11 dígitos")]
         [MaxLength(11, ErrorMessage = "CPF são 11 dígitos")]
@@ -33,7 +33,6 @@ namespace ProntuarioEletronico.Domain.Entities
         [MinLength(7, ErrorMessage = "RG são 7 dígitos")]
         [MaxLength(7, ErrorMessage = "RG são 7 dígitos")]
         public int RG { get; set; }
-        [Required(ErrorMessage = "Selecione uma foto sua")]
         public string? Image { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime? DataAtualizacao { get; set; }
