@@ -54,15 +54,6 @@ namespace ProntuarioEletronico.Web.Controllers
             return View(doctor);
         }
 
-        public IActionResult ImagePost(int id) 
-        {
-            ImageField doctorModel = new ImageField();
-            if(id != null)
-            {
-                doctorModel.IdImageField = id;
-            }
-            return View(doctorModel);
-        }
 
         [HttpPost]
         public async Task<IActionResult> Delete(int? id)
@@ -83,22 +74,46 @@ namespace ProntuarioEletronico.Web.Controllers
             return View(retDel);
         }
 
-        /*[HttpPost]
-        public async Task<IActionResult> ImagePost(int id, List<IFormFile> imageDoctor)
+        public IActionResult ImagePost(int id) 
+        {
+            ImageField doctorModel = new ImageField();
+            if(id != 0)
+            {
+                doctorModel.IdImageField = id;
+            }
+            return View(doctorModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ImagePost(int idImage, List<IFormFile> imageDoctor)
         {
             try
             {
-                if(id == null)
+                if (idImage == 0)
                 {
-                    view
+                    ViewBag.Message = $"O ID do Doutor é null!";
+                    return View(new ImageField() { IdImageField = idImage });
                 }
-            }
-            catch (Exception)
-            {
 
-                throw;
+                var file = imageDoctor.FirstOrDefault();
+                var fileName = $"{idImage}_{file.FileName}";
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot//Upload", fileName);
+
+                if(await _service.SaveFile(idImage, fileName) > 0)
+                {
+                    var stream = new FileStream(path, FileMode.Create);
+                    await file.CopyToAsync(stream);
+                    return RedirectToAction(nameof(Index));
+                }
+                ViewBag.Message = $"Não foi possível salvar o arquivo: {path}";
+                return View(new ImageField() { IdImageField = idImage, Image = fileName});
             }
-        }*/
+            catch (Exception ex)
+            {
+                ViewBag.Message = $"Error: {ex.Message}";
+            }
+            return View();
+        }
 
     }
 }

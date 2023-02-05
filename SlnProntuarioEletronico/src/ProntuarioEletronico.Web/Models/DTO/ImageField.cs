@@ -8,6 +8,6 @@ namespace ProntuarioEletronico.Web.Models.DTO
         public int IdImageField { get; set; }
         [DataType(DataType.Upload)]
         [DisplayName("Upload Image")]
-        public string? image { get; set; }
+        public string? Image { get; set; }
     }
 }
