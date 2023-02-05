@@ -17,12 +17,56 @@
       "PackagePath": "staticwebassets\\Upload\\1_download.jfif"
     },
     {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_imagem_2023-02-05_094835417.png",
+      "PackagePath": "staticwebassets\\Upload\\1_imagem_2023-02-05_094835417.png"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_tipoPisada.jpg",
+      "PackagePath": "staticwebassets\\Upload\\1_tipoPisada.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_tofu.jpg",
+      "PackagePath": "staticwebassets\\Upload\\1_tofu.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_voltarTreinar.jpg",
+      "PackagePath": "staticwebassets\\Upload\\1_voltarTreinar.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\2_download.jfif",
+      "PackagePath": "staticwebassets\\Upload\\2_download.jfif"
+    },
+    {
       "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\favicon.ico",
-      "PackagePath": "staticwebassets\\favicon.ico"
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\coracao.png",
+      "PackagePath": "staticwebassets\\img\\coracao.png"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\imgCarrosel1.jpg",
+      "PackagePath": "staticwebassets\\img\\imgCarrosel1.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\imgCarrosel2.png",
+      "PackagePath": "staticwebassets\\img\\imgCarrosel2.png"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\imgCarrosel3.jpg",
+      "PackagePath": "staticwebassets\\img\\imgCarrosel3.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\tipoPisada.jpg",
+      "PackagePath": "staticwebassets\\img\\tipoPisada.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\tofu.jpg",
+      "PackagePath": "staticwebassets\\img\\tofu.jpg"
+    },
+    {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\voltarTreinar.jpg",
+      "PackagePath": "staticwebassets\\img\\voltarTreinar.jpg"
     },
     {
       "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\js\\modalToast.js",

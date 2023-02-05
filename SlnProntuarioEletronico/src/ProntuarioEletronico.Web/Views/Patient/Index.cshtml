@@ -21,26 +21,27 @@
         <tbody>
             @if (Model != null && Model.Any())
             {
-                foreach (var doctor in Model)
+                foreach (var patient in Model)
                 {
                     <tr>
-                        <td scope="row">@doctor.id</td>
+                    <td scope="row">@patient.id</td>
                         <td>
                             <figure class="col-md-4">
-                                <img src="~/Upload/@doctor.image" style="width: 64px;" />
+                                <img src="~/Upload/@patient.image" style="width: 64px;" />
                             </figure>
                         </td>
-                        <td>@doctor.name</td>
-                        <td>@doctor.age</td>
-                        <td>@doctor.phone</td>
-                        <td>@doctor.email</td>
-                        <td>@doctor.sex</td>
-                        <td>@doctor.dataCadastro</td>
-                        <td>@doctor.dataAtualizacao</td>
+                        <td>@patient.name</td>
+                        <td>@patient.age</td>
+                        <td>@patient.phone</td>
+                        <td>@patient.email</td>
+                        <td>@patient.sex</td>
+                        <td>@patient.dataCadastro</td>
+                            <td>@patient.dataAtualizacao</td>
                         <td>
                             <div class="btn-group" role="group">
-                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@doctor.id">Edit</a> |
-                                <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@doctor.id)">Delete</a>
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@patient.id">Edit</a> |
+                                <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@patient.id)">Delete</a>
+                            <a class="btn btn-info" asp-action="ImagePost" asp-route-id="@patient.id"> &uArr; IMG </a>
                             </div>
                         </td>
                     </tr>

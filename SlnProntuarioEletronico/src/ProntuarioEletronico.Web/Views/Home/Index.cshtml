@@ -1,8 +1,79 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center text-light">
+    <h1 class="display-4 text-light">Bem Vindo(a)</h1>
+    <p>Leia sobre a documentação <a href="https://github.com/pedrogodri/Prontuario-Eletronico" class="text-light">aqui</a>.</p>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide border-decoration" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="~/img/imgCarrosel1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="~/img/imgCarrosel2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="~/img/imgCarrosel3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="card-group cardNoticias">
+    <div class="card">
+        <img src="~/img/tipoPisada.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Tipos de pisadas</h5>
+            <p class="card-text">Fortalecimento muscular e escolha do tênis adequado são os grandes aliados de caminhadas e corridas</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">@DateTime.Now</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="~/img/voltarTreinar.jpg" class="card-img-top" alt="Treino">
+        <div class="card-body">
+            <h5 class="card-title">Como voltar a treinar</h5>
+            <p class="card-text">Qualquer que seja o motivo da pausa, o corpo precisa de um tempo de readaptação. Confira alguns cuidados</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">@DateTime.Now</small>
+        </div>
+    </div>
+    <div class="card">
+        <img src="~/img/tofu.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Tofu: uma boa opção</h5>
+            <p class="card-text">Típico da culinária oriental, o queijo de soja oferece benefícios à saúde</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">@DateTime.Now</small>
+        </div>
+    </div>
+</div>
+
+<div class="noticias">
+    <h2>Notícias</h2>
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/igXB7weBgbM" title="Aqui tem Unimed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="faleConosco">
+    <a href="https://www.instagram.com/pedro_godri/" target="_blank">
+        <img src="~/img/faleConosco.png" class="imgFaleConosco" alt="Fale Conosco" />
+    </a>
 </div>

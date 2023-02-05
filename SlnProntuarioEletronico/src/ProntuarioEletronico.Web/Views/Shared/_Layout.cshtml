@@ -3,17 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ProntuarioEletronico.Web</title>
+    <title>@ViewData["Title"] - Prontuario Eletronico</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProntuarioEletronico.Web.styles.css" asp-append-version="true" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.13.1/datatables.min.css" />
+    <link rel="icon" href="~/img/coracao.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-header border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProntuarioEletronico.Web</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Trimed - Prontuario Eletronico</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,19 +23,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="MedicalPlan" asp-action="Index">Convênios</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="MedicalPlan" asp-action="Index">Convênios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Doctor" asp-action="Index">Médicos</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Doctor" asp-action="Index">Médicos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Patient" asp-action="Index">Pacientes</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Patient" asp-action="Index">Pacientes</a>
                         </li>
                     </ul>
                 </div>
@@ -46,11 +48,46 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - ProntuarioEletronico.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+<footer class="text-center text-white rodape">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="instagram.com/pedro_godri/" target="_blank"
+        role="button"
+        data-mdb-ripple-color="light">
+        <i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="linkedin.com/in/pedro-henrique-godri/" target="_blank"
+        role="button"
+        data-mdb-ripple-color="light"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <!-- Github -->
+      <a class="btn btn-link btn-floating btn-lg text-light m-1"
+        href="https://github.com/pedrogodri" target="_blank"
+        role="button"
+        data-mdb-ripple-color="light">
+        <i class="fab fa-github"></i>
+    </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-light p-3 footerCopyright">
+    © 2020 Copyright:
+    <a class="text-light" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 
     <!-- Messages using Toasts Component -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">
