@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hQjJBPxQcZw69QNxjCfF344HpSvhCt72+8fC7BFeSYk=",
+  "Hash": "GdThHyOL8a8n6AXrkFCilOfzS0C4ZlKa4GMYVVS4q60=",
   "Source": "ProntuarioEletronico.Web",
   "BasePath": "_content/ProntuarioEletronico.Web",
   "Mode": "Default",
@@ -1103,6 +1103,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\1_6_content1.png"
+    },
+    {
+      "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_content1.jpg",
+      "SourceId": "ProntuarioEletronico.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\",
+      "BasePath": "_content/ProntuarioEletronico.Web",
+      "RelativePath": "Upload/1_content1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\1_content1.jpg"
     },
     {
       "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_download.jfif",

@@ -3,31 +3,37 @@
 <p>
     <a class="btn btn-primary" asp-action="Create">New Category</a>
 </p>
-<table class="table">
+
+<table id="table-medicalPlan" class="display" style="width:100%">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.plan)
-            </th>
+            <th scope="col">#</th>
+            <th scope="col">Plano</th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @if (Model != null && Model.Any())
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.id)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.plan)
-                </td>
-                <td>
-                    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                    <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@item.id)">Delete</a>
+            foreach (var medicalPlan in Model)
+            {
+                <tr>
+                    <td scope="row">@medicalPlan.id</td>
+                    <td>@medicalPlan.plan</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@medicalPlan.id">Edit</a> |
+                            <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@medicalPlan.id)">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr class="odd">
+                <td valign="top" colspan="5">
+                    Nenhum usuário encontrado
                 </td>
             </tr>
         }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Upload\\1_6_content1.png"
     },
     {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_content1.jpg",
+      "PackagePath": "staticwebassets\\Upload\\1_content1.jpg"
+    },
+    {
       "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\1_download.jfif",
       "PackagePath": "staticwebassets\\Upload\\1_download.jfif"
     },

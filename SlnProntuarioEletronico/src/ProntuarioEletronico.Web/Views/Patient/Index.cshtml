@@ -3,158 +3,59 @@
 <p>
     <a class="btn btn-primary" asp-action="Create">New Category</a>
 </p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.sex)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.maritalStatus)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cpf)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.rg)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.dataAtualizacao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.dataCadastro)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.medicalPlanId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.plan)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.doctorId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.doctor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.profession)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.diagnosis)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.cep)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.number)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.complement)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.image)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.id)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.name)
-                    </td>
-                    <td>
-                    @Html.DisplayFor(modelItem => item.age)
-                    </td>
-                    <td>
-                    @Html.DisplayFor(modelItem => item.email)
-                    </td>
-                    <td>
-                    @Html.DisplayFor(modelItem => item.phone)
-                    </td>
-                    <td>
-                    @Html.DisplayFor(modelItem => item.sex)
-                     </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.maritalStatus)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.cpf)
-                </td>
-                <td>
-                        @Html.DisplayFor(modelItem => item.rg)
-                    </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.dataAtualizacao)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.dataCadastro)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.medicalPlanId)
-                    </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.plan)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.doctorId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.doctor)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.profession)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.diagnosis)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.cep)
-                    </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.address)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.number)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.complement)
-                </td>
-                <td>
-                    <figure class="col-md-4">
-                        <img src="~/Upload/@item.image" style="width: 64px;" />
-                    </figure>
-                </td>
-                    <td>
-                        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@item.id">Edit</a> |
-                        <a class="btn btn-danger" href="#" onclick="deletePatient(@item.id)">Delete</a>
-                        <a class="btn btn-info" asp-action="ImagePost" asp-route-id="@item.id"> &uArr; IMG </a>
+    <table id="table-doctor" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Foto</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Registrado</th>
+                <th scope="col">Alterado</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var doctor in Model)
+                {
+                    <tr>
+                        <td scope="row">@doctor.id</td>
+                        <td>
+                            <figure class="col-md-4">
+                                <img src="~/Upload/@doctor.image" style="width: 64px;" />
+                            </figure>
+                        </td>
+                        <td>@doctor.name</td>
+                        <td>@doctor.age</td>
+                        <td>@doctor.phone</td>
+                        <td>@doctor.email</td>
+                        <td>@doctor.sex</td>
+                        <td>@doctor.dataCadastro</td>
+                        <td>@doctor.dataAtualizacao</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@doctor.id">Edit</a> |
+                                <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@doctor.id)">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr class="odd">
+                    <td valign="top" colspan="5">
+                        Nenhum usuário encontrado
                     </td>
                 </tr>
-        }
-    </tbody>
+            }
+        </tbody>
+    </table>
 
 @section Scripts {
             <script>
