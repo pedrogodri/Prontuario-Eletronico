@@ -3,6 +3,7 @@ using ProntuarioEletronico.Domain.DTO;
 using ProntuarioEletronico.Domain.IRepositories;
 using ProntuarioEletronico.Domain.IServices;
 using ProntuarioEletronico.Web.Models;
+using ProntuarioEletronico.Web.Models.DTO;
 
 namespace ProntuarioEletronico.Web.Controllers
 {
@@ -74,6 +75,47 @@ namespace ProntuarioEletronico.Web.Controllers
                 };
             }
             return Json(retDel);
+        }
+
+        public IActionResult ImagePost(int id)
+        {
+            ImageField patientModel = new ImageField();
+            if(id != 0)
+            {
+                patientModel.IdImageField = id;
+            }
+            return View(patientModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ImagePost(int idImage, List<IFormFile> imagePatient)
+        {
+            try
+            {
+                if(idImage == 0)
+                {
+                    ViewBag.Message = $"O id do paciente é nulo";
+                    return View(new ImageField() { IdImageField = idImage });
+                }
+
+                var file = imagePatient.FirstOrDefault();
+                var fileName = $"{idImage}_{file.FileName}";
+                string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot//Upload", fileName);
+
+                if(await _service.SaveFile(idImage, fileName) > 0)
+                {
+                    var stream = new FileStream(path, FileMode.Create);
+                    file.CopyToAsync(stream);
+                    return RedirectToAction(nameof(Index));
+                }
+                ViewBag.Message = $"Não foi possível salvar o arquivo: {path}";
+                return View(new ImageField() { IdImageField = idImage, Image = fileName});
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = $"Error: {ex.Message}";
+            }
+            return View();
         }
     }
 }
