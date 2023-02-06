@@ -77,3 +77,99 @@ body {
 .footerCopyright {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* Table */
+.text-green {
+    color: #007a55;
+    font-weight: bold;
+}
+
+.tables {
+    border-radius: 5px;
+}
+
+
+/* Button */
+.btnCreate {
+    background-color: #fff;
+    border: 3px solid #60ca99;
+    margin: 50px 0;
+    width: 100%;
+    color: #007a55;
+    transition: .5s;
+}
+
+.btnCreate:hover {
+    background-color: #60ca99;
+    border: 3px solid #fff;
+    margin: 50px 0;
+    width: 100%;
+    color: #fff;
+    transition: .8s;
+}
+
+.btnDetails {
+    margin-right: 10px;
+    background-color: #60ca99;
+    color: #fff;
+    border: 3px solid #007a55;
+    transition: .5s;
+}
+
+.btnEdit {
+    margin-right: 10px;
+    background-color: #007a55;
+    color: #fff;
+    border: 3px solid #60ca99;
+    transition: .5s;
+}
+
+.btnDelete {
+    margin-right: 10px;
+    background-color: #60ca99;
+    color: #fff;
+    border: 3px solid #007a55;
+    transition: .5s;
+}
+
+.btnImage {
+    background-color: #007a55;
+    color: #fff;
+    border: 3px solid #60ca99;
+    transition: .5s;
+}
+
+.btnDetails:hover {
+    margin-right: 10px;
+    background-color: #fff;
+    color: #60ca99;
+    border: 3px solid #007a55;
+}
+
+.btnEdit:hover {
+    margin-right: 10px;
+    background-color: #fff;
+    color: #007a55;
+    border: 3px solid #60ca99;
+}
+
+.btnDelete:hover {
+    margin-right: 10px;
+    background-color: #fff;
+    color: #60ca99;
+    border: 3px solid #007a55;
+}
+
+.btnImage:hover {
+    background-color: #fff;
+    color: #007a55;
+    border: 3px solid #60ca99;
+}
+
+/* Image */
+
+.imgPerfil {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+}

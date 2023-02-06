@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kECy52dwGhHGYsZWdJjdSldN0lSkHa98NCwWX2/zLno=",
+  "Hash": "P2Ob5amSfjdo7aVTfy0XT2vJT/NeQ17hO1mk2Ymp8a8=",
   "Source": "ProntuarioEletronico.Web",
   "BasePath": "_content/ProntuarioEletronico.Web",
   "Mode": "Default",
@@ -1341,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Upload\\2_download.jfif"
+    },
+    {
+      "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\2_voltarTreinar.jpg",
+      "SourceId": "ProntuarioEletronico.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\",
+      "BasePath": "_content/ProntuarioEletronico.Web",
+      "RelativePath": "Upload/2_voltarTreinar.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\2_voltarTreinar.jpg"
     }
   ]
 }

@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ProntuarioEletronico.Domain.DTO.MedicalPlanDTO>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">New Category</a>
+    <a class="btn btnCreate" asp-action="Create">Adicionar Convênio</a>
 </p>
 
-<table id="table-medicalPlan" class="display" style="width:100%">
+<table id="table-medicalPlan" class="display text-green bg-light tables" style="width:100%">
     <thead>
         <tr>
             <th scope="col">#</th>
@@ -22,8 +22,8 @@
                     <td>@medicalPlan.plan</td>
                     <td>
                         <div class="btn-group" role="group">
-                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@medicalPlan.id">Edit</a> |
-                            <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@medicalPlan.id)">Delete</a>
+                            <a class="btn btnEdit" asp-action="Edit" asp-route-id="@medicalPlan.id"><i class="fa-regular fa-pen-to-square"></i></a>
+                            <a class="btn btnDelete" href="#" onclick="deleteMedicalPlan(@medicalPlan.id)"><i class="fa fa-trash"></i></a>
                         </div>
                     </td>
                 </tr>

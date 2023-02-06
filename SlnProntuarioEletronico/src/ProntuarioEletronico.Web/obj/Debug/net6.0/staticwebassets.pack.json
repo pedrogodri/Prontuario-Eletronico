@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\Upload\\2_download.jfif"
     },
     {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\Upload\\2_voltarTreinar.jpg",
+      "PackagePath": "staticwebassets\\Upload\\2_voltarTreinar.jpg"
+    },
+    {
       "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

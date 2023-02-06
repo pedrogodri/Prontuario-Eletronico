@@ -1,9 +1,9 @@
 ﻿@model IEnumerable<ProntuarioEletronico.Domain.DTO.PatientDTO>
 
 <p>
-    <a class="btn btn-primary" asp-action="Create">New Category</a>
+    <a class="btn btnCreate" asp-action="Create">New Category</a>
 </p>
-    <table id="table-doctor" class="display" style="width:100%">
+    <table id="table-doctor" class="display text-green bg-light tables" style="width:100%">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -39,9 +39,10 @@
                             <td>@patient.dataAtualizacao</td>
                         <td>
                             <div class="btn-group" role="group">
-                            <a class="btn btn-primary" asp-action="Edit" asp-route-id="@patient.id">Edit</a> |
-                                <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@patient.id)">Delete</a>
-                            <a class="btn btn-info" asp-action="ImagePost" asp-route-id="@patient.id"> &uArr; IMG </a>
+                                <a class="btn btnDetails" asp-action="Details" asp-route-id="@patient.id"><i class="fa fa-circle-info"></i></a>
+                                <a class="btn btnEdit" asp-action="Edit" asp-route-id="@patient.id"><i class="fa-regular fa-pen-to-square"></i></a>
+                                <a class="btn btnDelete" href="#" onclick="deletePatient(@patient.id)"><i class="fa fa-trash"></i></a>
+                                <a class="btn btnImage" asp-action="ImagePost" asp-route-id="@patient.id"><i class="fa-regular fa-image"></i></a>
                             </div>
                         </td>
                     </tr>
