@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YWY2MeA8mO9LZhy080emHvkmD4AFbKScRP8x+7uydU4=",
+  "Hash": "kECy52dwGhHGYsZWdJjdSldN0lSkHa98NCwWX2/zLno=",
   "Source": "ProntuarioEletronico.Web",
   "BasePath": "_content/ProntuarioEletronico.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\coracao.png"
+    },
+    {
+      "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\faleConosco.png",
+      "SourceId": "ProntuarioEletronico.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\",
+      "BasePath": "_content/ProntuarioEletronico.Web",
+      "RelativePath": "img/faleConosco.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\faleConosco.png"
     },
     {
       "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\imgCarrosel1.jpg",

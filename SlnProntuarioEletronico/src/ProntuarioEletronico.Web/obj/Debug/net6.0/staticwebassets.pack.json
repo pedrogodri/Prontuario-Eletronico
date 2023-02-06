@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\img\\coracao.png"
     },
     {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\faleConosco.png",
+      "PackagePath": "staticwebassets\\img\\faleConosco.png"
+    },
+    {
       "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\imgCarrosel1.jpg",
       "PackagePath": "staticwebassets\\img\\imgCarrosel1.jpg"
     },

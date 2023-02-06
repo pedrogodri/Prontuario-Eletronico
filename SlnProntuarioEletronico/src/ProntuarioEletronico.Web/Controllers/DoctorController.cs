@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ProntuarioEletronico.Domain.DTO;
 using ProntuarioEletronico.Domain.IRepositories;
 using ProntuarioEletronico.Domain.IServices;
+using ProntuarioEletronico.Infra.Data.Context;
 using ProntuarioEletronico.Web.Models;
 using ProntuarioEletronico.Web.Models.DTO;
 
@@ -10,10 +12,12 @@ namespace ProntuarioEletronico.Web.Controllers
     public class DoctorController : Controller
     {
         private readonly IDoctorService _service;
+        private readonly SQLServerContext _context;
 
-        public DoctorController(IDoctorService service)
+        public DoctorController(IDoctorService service, SQLServerContext context)
         {
             _service = service;
+            _context = context;
         }
 
         public async Task<IActionResult> Index()
@@ -115,5 +119,10 @@ namespace ProntuarioEletronico.Web.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Details(int id)
+        {
+            var doctor = await _service.FindById(id);
+            return View(doctor);
+        }
     }
 }

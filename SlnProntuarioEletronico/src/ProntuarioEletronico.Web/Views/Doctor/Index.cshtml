@@ -37,9 +37,10 @@
                         <td>@doctor.dataAtualizacao</td>
                         <td>
                             <div class="btn-group" role="group">
-                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@doctor.id">Edit</a> |
+                                <a class="btn btn-warning" asp-action="Details" asp-route-id="@doctor.id">Details</a>
+                                <a class="btn btn-primary" asp-action="Edit" asp-route-id="@doctor.id">Edit</a>
                                 <a class="btn btn-danger" href="#" onclick="deleteMedicalPlan(@doctor.id)">Delete</a>
-                            <a class="btn btn-info" asp-action="ImagePost" asp-route-id="@doctor.id"> &uArr; IMG </a>
+                                <a class="btn btn-info" asp-action="ImagePost" asp-route-id="@doctor.id"> &uArr; IMG </a>
                             </div>
                         </td>
                     </tr>
