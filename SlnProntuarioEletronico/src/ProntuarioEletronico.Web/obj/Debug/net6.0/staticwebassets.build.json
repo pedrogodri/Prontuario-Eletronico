@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P2Ob5amSfjdo7aVTfy0XT2vJT/NeQ17hO1mk2Ymp8a8=",
+  "Hash": "JsBwCQL2Blyzm45mz3YLFn9SdBx2jouwZo6HHfLmzI4=",
   "Source": "ProntuarioEletronico.Web",
   "BasePath": "_content/ProntuarioEletronico.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\coracao.png"
+    },
+    {
+      "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\Curriculo Pedro Henrique Godri.pdf",
+      "SourceId": "ProntuarioEletronico.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\",
+      "BasePath": "_content/ProntuarioEletronico.Web",
+      "RelativePath": "img/Curriculo Pedro Henrique Godri.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Curriculo Pedro Henrique Godri.pdf"
     },
     {
       "Identity": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\faleConosco.png",

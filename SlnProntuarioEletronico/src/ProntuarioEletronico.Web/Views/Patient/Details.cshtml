@@ -1,13 +1,19 @@
 ﻿@using ProntuarioEletronico.Domain.Enums;
 @model ProntuarioEletronico.Domain.DTO.PatientDTO
 
-<h1>Details</h1>
+<div class="text-light">
+    <h1>Detalhes</h1>
+    <h4>Detalhes do paciente - @Model.name no prontuário</h4>
+    <hr />
+</div>
 
-<h4>Medico</h4>
-<hr />
+
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <figure class="col-md-4">
+            <img src="~/Upload/@Model.image" class="imgPerfilDetails" />
+        </figure>
+        <form asp-action="Edit" class="text-light">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
@@ -16,81 +22,77 @@
                 <span asp-validation-for="name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="age" class="control-label"></label>
+                <label asp-for="age" class="control-label">Idade</label>
                 <input asp-for="age" class="form-control" readonly />
                 <span asp-validation-for="age" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="email" class="control-label"></label>
+                <label asp-for="email" class="control-label">E-mail</label>
                 <input asp-for="email" class="form-control" type="email" readonly />
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="phone" class="control-label"></label>
+                <label asp-for="phone" class="control-label">Telefone / Celular</label>
                 <input asp-for="phone" class="form-control" readonly/>
                 <span asp-validation-for="phone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cpf" class="control-label"></label>
+                <label asp-for="cpf" class="control-label">CPF</label>
                 <input asp-for="cpf" class="form-control" readonly />
                 <span asp-validation-for="cpf" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="rg" class="control-label"></label>
+                <label asp-for="rg" class="control-label">RG</label>
                 <input asp-for="rg" class="form-control" readonly />
                 <span asp-validation-for="rg" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="sex" class="control-label"></label>
+                <label asp-for="sex" class="control-label">Sexo</label>
                 <input asp-for="sex" class="form-control" readonly />
                 <span asp-validation-for="sex" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="maritalStatus" class="control-label"></label>
+                <label asp-for="maritalStatus" class="control-label">estado Civil</label>
                 <input asp-for="maritalStatus" class="form-control" readonly />
                 <span asp-validation-for="maritalStatus" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="profession" class="control-label"></label>
+                <label asp-for="profession" class="control-label">Profissão</label>
                 <input asp-for="profession" class="form-control" readonly />
                 <span asp-validation-for="profession" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="diagnosis" class="control-label"></label>
+                <label asp-for="diagnosis" class="control-label">Diagnóstico</label>
                 <textarea asp-for="diagnosis" class="form-control" readonly></textarea>
                 <span asp-validation-for="diagnosis" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cep" class="control-label"></label>
+                <label asp-for="cep" class="control-label">CEP</label>
                 <textarea asp-for="cep" class="form-control" readonly></textarea>
                 <span asp-validation-for="cep" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="address" class="control-label"></label>
+                <label asp-for="address" class="control-label">Endereço</label>
                 <textarea asp-for="address" class="form-control" readonly></textarea>
                 <span asp-validation-for="address" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="number" class="control-label"></label>
+                <label asp-for="number" class="control-label">Número</label>
                 <textarea asp-for="number" class="form-control" readonly></textarea>
                 <span asp-validation-for="number" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="complement" class="control-label"></label>
+                <label asp-for="complement" class="control-label">Complemento</label>
                 <textarea asp-for="complement" class="form-control" readonly></textarea>
                 <span asp-validation-for="complement" class="text-danger"></span>
-            </div>
-
-            <div class="form-group my-4">
-                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn voltarLista" style="margin-top: 20px">Voltar a lista de pacientes</a>
 </div>
 
 

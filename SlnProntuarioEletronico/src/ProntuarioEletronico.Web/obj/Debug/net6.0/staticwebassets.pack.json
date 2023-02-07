@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\Curriculo Pedro Henrique Godri.pdf",
+      "PackagePath": "staticwebassets\\img\\Curriculo Pedro Henrique Godri.pdf"
+    },
+    {
       "Id": "D:\\pedro\\Documents\\Prontuario-Eletronico\\SlnProntuarioEletronico\\src\\ProntuarioEletronico.Web\\wwwroot\\img\\coracao.png",
       "PackagePath": "staticwebassets\\img\\coracao.png"
     },
