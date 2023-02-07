@@ -173,3 +173,22 @@ body {
     height: 100px;
     align-items: center;
 }
+
+/* Term */
+
+.checkTerms {
+    margin-top: 50px;
+}
+
+.term {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    transition: .5s;
+}
+
+.term:hover {
+    background-color: #fff;
+    color: #007a55;
+    border: 3px solid #60ca99;
+}

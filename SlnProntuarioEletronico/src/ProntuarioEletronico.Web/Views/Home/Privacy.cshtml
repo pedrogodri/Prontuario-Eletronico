@@ -64,4 +64,22 @@
         caso interaja com um dos recursos que você usa em nosso site.
     </p>
     <p>Esta política é efetiva a partir de @DateTime.Now</p>
+
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text text-light">Não iremos compartilhar seu e-mail com terceiros</div>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <a href="~/img/Curriculo Pedro Henrique Godri.pdf" target="_blank" class="term">Termos de compromisso</a>
+        <div class="mb-3 form-check checkTerms">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required/>
+            <label class="form-check-label" for="exampleCheck1">Aceite os termos</label>
+        </div>
+        <button type="submit" asp-controller="Home" asp-action="Index" class="btn btn-primary btnCreate" style="width: 35%;">Aceitar</button>
+    </form>
 </div>
