@@ -166,8 +166,37 @@ body {
     border: 3px solid #60ca99;
 }
 
-/* Image */
+.btnCreateDB {
+    background-color: #fff;
+    border: 3px solid #60ca99;
+    margin: 50px 0;
+    width: 100%;
+    color: #007a55;
+    transition: .5s;
+}
 
+.btnCreateDB:hover {
+    background-color: #60ca99;
+    border: 3px solid #fff;
+    margin: 50px 0;
+    width: 100%;
+    color: #fff;
+    transition: .8s;
+}
+
+.voltarLista {
+    background-color: #007a55;
+    color: #fff;
+    border: 3px solid #60ca99;
+    transition: .5s;
+}
+
+.voltarLista:hover {
+    background-color: #fff;
+    color: #007a55;
+    border: 3px solid #60ca99;
+}
+/* Image */
 .imgPerfil {
     width: 100px;
     height: 100px;

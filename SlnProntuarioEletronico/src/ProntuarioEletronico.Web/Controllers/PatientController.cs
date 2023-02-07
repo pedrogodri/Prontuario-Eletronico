@@ -117,5 +117,11 @@ namespace ProntuarioEletronico.Web.Controllers
             }
             return View();
         }
+
+        public async Task<IActionResult> Details(int id)
+        {
+            var patient = await _service.FindById(id);
+            return View(patient);
+        }
     }
 }
