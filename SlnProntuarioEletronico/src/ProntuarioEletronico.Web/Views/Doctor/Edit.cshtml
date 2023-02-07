@@ -1,13 +1,16 @@
 ﻿@using ProntuarioEletronico.Domain.Enums;
 @model ProntuarioEletronico.Domain.DTO.DoctorDTO
 
-<h1>Edit</h1>
+<div class="text-light">
+    <h1>Editar</h1>
+    <h4>Editar o médico no prntuário</h4>
+    <hr />
+</div>
 
-<h4>Medico</h4>
-<hr />
+
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+        <form asp-action="Edit" class="text-light">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="id" />
             <div class="form-group">
@@ -16,48 +19,48 @@
                 <span asp-validation-for="name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="age" class="control-label"></label>
+                <label asp-for="age" class="control-label">Idade</label>
                 <input asp-for="age" class="form-control" />
                 <span asp-validation-for="age" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="email" class="control-label"></label>
+                <label asp-for="email" class="control-label">E-mail</label>
                 <input asp-for="email" class="form-control" type="email" />
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="phone" class="control-label"></label>
+                <label asp-for="phone" class="control-label">telefone / Celular</label>
                 <input asp-for="phone" class="form-control" />
                 <span asp-validation-for="phone" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="cpf" class="control-label"></label>
+                <label asp-for="cpf" class="control-label">CPF</label>
                 <input asp-for="cpf" class="form-control" />
                 <span asp-validation-for="cpf" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="rg" class="control-label"></label>
+                <label asp-for="rg" class="control-label">RG</label>
                 <input asp-for="rg" class="form-control" />
                 <span asp-validation-for="rg" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="crm" class="control-label"></label>
+                <label asp-for="crm" class="control-label">CRM</label>
                 <input asp-for="crm" class="form-control" />
                 <span asp-validation-for="crm" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="especialidade" class="control-label"></label>
+                <label asp-for="especialidade" class="control-label">Especialidade</label>
                 <input asp-for="especialidade" class="form-control" />
                 <span asp-validation-for="especialidade" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="description" class="control-label"></label>
+                <label asp-for="description" class="control-label">Descrição</label>
                 <textarea asp-for="description" class="form-control"></textarea>
                 <span asp-validation-for="description" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <label asp-for="sex" class="control-label"></label>
+                <label asp-for="sex" class="control-label">Sexo</label>
                 <select asp-for="sex" class="form-control">
                     <option value="">Selecione</option>
                     <option value="@SexEnum.Masculine">Masculino</option>
@@ -67,7 +70,7 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="maritalStatus" class="control-label"></label>
+                <label asp-for="maritalStatus" class="control-label">Estado Civil</label>
                 <select asp-for="maritalStatus" class="form-control">
                     <option value="">Selecione</option>
                     <option value="@MaritalStatusEnum.Married">Casado(a)</option>
@@ -78,20 +81,20 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="dataAtualizacao" class="control-label"></label>
+                <label asp-for="dataAtualizacao" class="control-label">⠀⠀⠀</label>
                 <input asp-for="dataAtualizacao" type="hidden" value="@DateTime.Now" class="form-control" />
                 <span asp-validation-for="dataAtualizacao" class="text-danger"></span>
             </div>
 
             <div class="form-group my-4">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Salvar" class="btn btnDB" />
             </div>
         </form>
     </div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn voltarLista">Voltar a lista de médicos</a>
 </div>
 
 @section Scripts {
