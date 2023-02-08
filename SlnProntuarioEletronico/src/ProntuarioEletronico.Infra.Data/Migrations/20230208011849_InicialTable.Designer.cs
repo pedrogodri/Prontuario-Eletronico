@@ -12,8 +12,8 @@ using ProntuarioEletronico.Infra.Data.Context;
 namespace ProntuarioEletronico.Infra.Data.Migrations
 {
     [DbContext(typeof(SQLServerContext))]
-    [Migration("20230204162638_Inicial")]
-    partial class Inicial
+    [Migration("20230208011849_InicialTable")]
+    partial class InicialTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -204,6 +204,44 @@ namespace ProntuarioEletronico.Infra.Data.Migrations
                     b.HasIndex("MedicalPlanId");
 
                     b.ToTable("Patients");
+                });
+
+            modelBuilder.Entity("ProntuarioEletronico.Domain.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Login")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Profile")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("ProntuarioEletronico.Domain.Entities.Patient", b =>
